@@ -1,0 +1,218 @@
+/* reset selector */
+*{
+	margin: 0;
+	padding: 0; }
+/* hide the mobile menu */
+#mobile_menu { display: none; }
+/* display the mobile menu */
+#mobile_menu { display: block; }
+/* tablet portrait layout */
+@media only screen and (max-width: 959px) {
+	main section h1 { font-size: 135%; }
+	main section h2 { font-size: 120%; }
+	main aside h2 { font-size: 120%; }
+}
+/* phone in landscape orentation layout */
+@media only screen and (max-width: 767px) {
+	#mobile_menu { display: block; }
+	#nav_menu {display: none; }
+	.slicknav_menu { background-color: #800000 !important; }
+	header img { float: none; }
+	header { 
+		text-align: center; 
+		float: center; }
+	main section { 
+		float: none; 
+		padding-right: 2.08333333%;
+		padding-left: 2.08333333%;
+		width: 95.8333333%;
+	}
+	main aside { 
+		float: none; 
+		padding-right: 2.08333333%;
+		padding-left: 2.08333333%;
+		width: 95.8333333%;
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+}
+/* phone in portrait orentation layout */
+@media only screen and (max-width: 479px) {
+	html { font-size: 90%; }
+}
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+	max-width: 960px;
+	width: 99%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	border: 3px solid #931420;
+	background: white;
+}
+h1 {
+	font-size: 150%;
+	padding-top: .5em;
+	padding-bottom: .25em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* the styles for the header */
+header img { 
+	float: left;
+	padding-left: 3.125%;
+	padding-right: 3.125%;
+}
+header h2 {
+	font-size: 170%;
+	color: #800000;
+	
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header { 
+	border-bottom: 3px solid #931420; 
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: 
+		-webkit-inear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -moz-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+.shadow { text-shadow: 2px 2px 2px #800000; }
+
+/* the styles for the navigation menu */
+
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative; 
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	width: 240px;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold; }
+#nav_menu ul li.lastitem a {
+}
+#nav_menu ul li.lastitem ul li ul {
+	position: absolute;
+	left: -100%;
+	top: 0; }
+#nav_menu ul li a.current {
+	color: yellow; }
+#nav_menu ul li { float: left; }
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%; }
+#nav_menu ul ul li { float: none; }
+#nav_menu ul ul li ul {
+	position: absolute;
+	left: 100%;
+	top: 0; }
+#nav_menu ul li:hover > ul {
+	display: block; }
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both; }
+	
+/* the styles for the main section */
+main {
+	clear: left;
+}
+main section {
+	width: 54.6875%;
+	float: right;
+	padding-right: 2.08333333%;
+	padding-left: 2.08333333%;
+	padding-bottom: 2.08333333%;
+}
+main aside {
+	width: 22.3958333%;
+	padding-right: 2.08333333%;
+	padding-left: 2.08333333%;
+}
+main aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main aside img {
+	padding-bottom: 1em;
+}
+main article {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+main article img {
+	float: right;
+	margin: .25em;
+	border: 1px solid black;
+	max-width: 30%;
+	min-width: 150px;
+}
+main article h2 {
+	padding-top: 0;
+}
+main article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main h2 {
+	font-size: 130%;
+	color: #800000;
+	padding-top: .5em;
+	padding-bottom: .25em;
+}
+main h3 { 
+	font-size: 105%; 
+	padding-bottom: .25em;
+}
+main img {
+	padding-bottom: 1em;
+}
+main p {
+	padding-bottom: .5em;
+}
+main blockquote {
+	padding-right: 2em;
+	padding-left: 2em;
+	font-style: italic;
+}
+main ul {
+	padding-bottom: .25em;
+	padding-left: 1.25em;
+}
+main li {
+	padding-bottom: .35em;
+	list-style: circle;
+}
+main a:hover, a:focus { font-style: italic; }
+
+/* the styles for the footer */
+footer {
+	background: #931420;
+	clear: both;
+}
+footer p { 
+	text-align: center;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
